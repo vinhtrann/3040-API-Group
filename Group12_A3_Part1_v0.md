@@ -1,7 +1,7 @@
-##API Description
+## API Description
 
-##Endpoints
+## Endpoints
 
-##Resources
+## Resources
 
-##Sample
+## Sample
