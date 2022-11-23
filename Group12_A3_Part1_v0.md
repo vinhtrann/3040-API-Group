@@ -2,48 +2,68 @@
 An API for developers to retrieve Winnipeg Transit information
 
 ## Endpoints
-GET arrival time
+GET arrival time  
 /api/arrivalTime
 - Parameters
-    - Bus Number
-    - Bus stop number
+    - **busNum** (int): The number of the bus (required)
+    - **stopNum** (int): The number of the stop (required)
 
-GET available capacity
+GET available capacity  
 /api/availableSeats
 - Parameters
-    - License plate
+    - **plateNum** (String): The bus' registered license plate number (required)
 
-GET number of stops on the route
+GET number of stops on the route  
 /api/numStops
 - Parameters
-    - Route number 
+    - **routeNum** (int): The bus' route number (required)
 
 ## Resources
 
-## Sample
 
+GET arrival time  
 ```
 {
     "results": {
-        "arrivalTime": "VAL"
+        "arrivalTime": "5:35:23 PM"
     },
     "status": "OK"
 }
 ```
 
+
+GET available capacity  
 ```
 {
     "results": {
-        "availableSeats": "VAL"
+        "availableSeats": 10
     },
     "status": "OK"
 }
 ```
 
+
+GET number of stops on the route  
 ```
 {
     "results": {
-        "numStops": "VAL"
+        "numStops": 15
+    },
+    "status": "OK"
+}
+```
+
+## Sample Request
+
+```
+https://ourtransit.wpg/api/arrivaltime?busNum=10&stopNum=50
+```
+
+Sample response:
+```
+{
+    "results": {
+        "arrivalTime": "1:42:49 PM"
     },
     "status": "OK"
 }
