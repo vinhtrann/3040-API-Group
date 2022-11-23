@@ -21,3 +21,30 @@ GET number of stops on the route
 ## Resources
 
 ## Sample
+
+```
+{
+    "results": {
+        "arrivalTime": "VAL"
+    },
+    "status": "OK"
+}
+```
+
+```
+{
+    "results": {
+        "availableSeats": "VAL"
+    },
+    "status": "OK"
+}
+```
+
+```
+{
+    "results": {
+        "numStops": "VAL"
+    },
+    "status": "OK"
+}
+```
