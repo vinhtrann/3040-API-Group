@@ -1,5 +1,5 @@
 ## API Description
-An API for developers to retrieve Winnipeg Transit information
+An API for developers to retrieve precise and live Winnipeg Transit information
 
 ## Endpoints
 GET arrival time  
