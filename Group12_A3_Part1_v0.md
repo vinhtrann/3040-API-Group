@@ -68,3 +68,17 @@ Sample response:
     "status": "OK"
 }
 ```
+
+```
+https://ourtransit.wpg/api/numStops?routeNum=75
+```
+
+Sample response:
+```
+{
+    "results": {
+        "numStops": "28"
+    },
+    "status": "OK"
+}
+```
