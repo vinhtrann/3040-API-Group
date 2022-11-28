@@ -54,7 +54,7 @@ GET number of stops on the route
 ```
 
 ## Sample Request
-
+1.
 ```
 https://ourtransit.wpg/api/arrivaltime?busNum=10&stopNum=50
 ```
@@ -68,7 +68,7 @@ Sample response:
     "status": "OK"
 }
 ```
-
+2.
 ```
 https://ourtransit.wpg/api/numStops?routeNum=75
 ```
